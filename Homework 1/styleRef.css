@@ -1,0 +1,26 @@
+body {
+    background-color: #9617D2;
+}
+
+button {
+    font-size: 40px;
+    background-color: #9617D2;
+    border: none;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+button:hover {
+    color: wheat;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: wheat;
+}

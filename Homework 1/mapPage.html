@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Interactive Map</title>
+</head>
+
+<body>
+    <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
+    <br>
+    <h2 id="title">Select Destination</h2>
+    <hr>
+    <div id="googleMap"></div>
+    <hr>
+
+    <form>
+        <label for="tagLabel">Insert Marker Label</label>
+        <input type="text" id="tagLabel" name="tagLabel" />
+    </form>
+
+    <form>
+        <label for="searchMarker" id="search">Search Marker</label>
+        <input type="text" id="searchMarker" name="searchMarker" />
+    </form>
+
+    <label class="customCheckbox"> Hide Points of Interest</label>
+    <input type="checkbox" id="hideMarkers">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scriptMap.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgGOr5R8VFUlpt5KsHRJdWvAlcC8-Ds80&map_ids=c0bbf748d25890f4&callback=initMap"></script>
+</body>
+
+</html>
