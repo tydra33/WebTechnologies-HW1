@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#mark1 {
+    animation: mark 3s infinite;
+    animation-delay: 0.5s;
+}
+
+#mark2 {
+    animation: mark 3s infinite;
+    animation-delay: 0.7s;
+}
+
+#mark3 {
+    animation: mark 3s infinite;
+    animation-delay: 0.9s;
+}
+
+.svgImage {
+    display: inline-block;
+    width: 100%;
+    margin-top: 25%;
+}
+
+#title {
+    padding: 10px;
+    background: #9617D2;
+    font-size: 2em;
+    cursor: default;
+}
+
+#title:hover {
+    color: wheat;
+}
+
+.btn {
+    font-size: large;
+    border: 2px solid #9617D2;
+    color: #9617D2;
+    padding: 10px 10px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn:hover {
+    background-color: black;
+    content: "";
+    transition: all 0.6s ease;
+}
+
+@keyframes mark{
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-60px); }
+    100% { transform: translateY(0); }
+}
+
+@media only screen and (min-width: 580px) {
+    .svgImage {width:70%; margin-top: 15%;}
+    #title {font-size: 3em;}
+    .btn {padding: 10px 70px;}
+}
+
+@media only screen and (min-width: 850px) {
+    .svgImage {width:60%; height: fit-content; margin-top: 0;}
+    #title {font-size: 4em;}
+    .btn {padding: 10px 100px;}
+}
+
+@media only screen and (min-width: 1200px) {
+    .svgImage {width:50%; height: fit-content; margin-top: 0;}
+    #title {font-size: 5em;}
+    .btn {padding: 10px 110px;}
+}
+
+/* 9617D2 */

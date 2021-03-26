@@ -1,0 +1,76 @@
+body {
+    background-color: #9617D2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+button {
+    font-size: 40px;
+    background-color: #9617D2;
+    border: none;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+button:hover {
+    color: wheat;
+}
+
+#hideMarkers {
+    cursor: pointer;
+}
+
+#googleMap {
+    width:100vw;
+    height:100vw;
+}
+
+#title {
+    display: inline-block;
+    padding: 10px;
+    font-size: 2em;
+    cursor: default;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+#search {
+    cursor: pointer;
+    border: 2px solid purple;
+    width: 145px;
+}
+
+#search:hover {
+    color: wheat;
+
+    background-color: purple;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 450px) {
+    #googleMap {width:100vw;height:55vw;}
+}
+
+@media only screen and (min-width: 850px) {
+    #googleMap {width:100vw;height:45vw;}
+}
+
+@media only screen and (min-width: 1045px) {
+    #googleMap {width:100vw;height:35vw;}
+}
+
+@media only screen and (min-width: 1200px) {
+    #googleMap {width:100vw;height:30vw;}
+}
